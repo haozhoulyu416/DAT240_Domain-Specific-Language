@@ -1,0 +1,154 @@
+/**
+ */
+package Manufacture.impl;
+
+import Manufacture.ManuStep;
+import Manufacture.ManufacturePackage;
+
+import Manufacture.TransStep;
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Manu Step</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link Manufacture.impl.ManuStepImpl#getNextStep1 <em>Next Step1</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class ManuStepImpl extends StepImpl implements ManuStep {
+	/**
+	 * The cached value of the '{@link #getNextStep1() <em>Next Step1</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getNextStep1()
+	 * @generated
+	 * @ordered
+	 */
+	protected TransStep nextStep1;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ManuStepImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return ManufacturePackage.Literals.MANU_STEP;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public TransStep getNextStep1() {
+		if (nextStep1 != null && nextStep1.eIsProxy()) {
+			InternalEObject oldNextStep1 = (InternalEObject)nextStep1;
+			nextStep1 = (TransStep)eResolveProxy(oldNextStep1);
+			if (nextStep1 != oldNextStep1) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, ManufacturePackage.MANU_STEP__NEXT_STEP1, oldNextStep1, nextStep1));
+			}
+		}
+		return nextStep1;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public TransStep basicGetNextStep1() {
+		return nextStep1;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setNextStep1(TransStep newNextStep1) {
+		TransStep oldNextStep1 = nextStep1;
+		nextStep1 = newNextStep1;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ManufacturePackage.MANU_STEP__NEXT_STEP1, oldNextStep1, nextStep1));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case ManufacturePackage.MANU_STEP__NEXT_STEP1:
+				if (resolve) return getNextStep1();
+				return basicGetNextStep1();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case ManufacturePackage.MANU_STEP__NEXT_STEP1:
+				setNextStep1((TransStep)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case ManufacturePackage.MANU_STEP__NEXT_STEP1:
+				setNextStep1((TransStep)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case ManufacturePackage.MANU_STEP__NEXT_STEP1:
+				return nextStep1 != null;
+		}
+		return super.eIsSet(featureID);
+	}
+
+} //ManuStepImpl

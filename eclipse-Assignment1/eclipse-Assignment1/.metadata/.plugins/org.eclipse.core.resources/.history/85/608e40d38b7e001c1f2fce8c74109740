@@ -1,0 +1,17 @@
+/**
+ */
+package Step1;
+
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Sub Sub Step1</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ *
+ * @see Step1.Step1Package#getSubSubStep1()
+ * @model
+ * @generated
+ */
+public interface SubSubStep1 extends SubStep2 {
+} // SubSubStep1

@@ -1,0 +1,50 @@
+#
+
+pluginName = Assignment1 Edit Support
+providerName = www.example.org
+
+_UI_CreateChild_text = {0}
+_UI_CreateChild_text2 = {1} {0}
+_UI_CreateChild_text3 = {1}
+_UI_CreateChild_tooltip = Create New {0} Under {1} Feature
+_UI_CreateChild_description = Create a new child of type {0} for the {1} feature of the selected {2}.
+_UI_CreateSibling_description = Create a new sibling of type {0} for the selected {2}, under the {1} feature of their parent.
+
+_UI_PropertyDescriptor_description = The {0} of the {1}
+
+_UI_ManuSystem_type = Manu System
+_UI_Step_type = Step
+_UI_NamedElement_type = Named Element
+_UI_WorkPiece_type = Work Piece
+_UI_Storage_type = Storage
+_UI_IntermediateProduct_type = Intermediate Product
+_UI_Usable_type = Usable
+_UI_HierarchyStep_type = Hierarchy Step
+_UI_ManuStep_type = Manu Step
+_UI_TransStep_type = Trans Step
+_UI_QAStep_type = QA Step
+_UI_MaterialConditioner_type = Material Conditioner
+_UI_Unknown_type = Object
+
+_UI_Unknown_datatype= Value
+
+_UI_ManuSystem_FirstStep_feature = First Step
+_UI_ManuSystem_intermediateproducts_feature = Intermediateproducts
+_UI_ManuSystem_workpiece_feature = Workpiece
+_UI_ManuSystem_storage_feature = Storage
+_UI_ManuSystem_materialconditioner_feature = Materialconditioner
+_UI_Step_Procedures_feature = Procedures
+_UI_Step_speed_feature = Speed
+_UI_Step_person_feature = Person
+_UI_Step_uses_feature = Uses
+_UI_Step_NextStep_feature = Next Step
+_UI_NamedElement_name_feature = Name
+_UI_WorkPiece_kilogram_feature = Kilogram
+_UI_WorkPiece_cubic_feature = Cubic
+_UI_Storage_WorkPieceStores_feature = Work Piece Stores
+_UI_HierarchyStep_Contains_feature = Contains
+_UI_MaterialConditioner_picks_feature = Picks
+_UI_Unknown_feature = Unspecified
+
+_UI_ManuStep_NextStep1_feature = Next Step1
+_UI_MaterialConditioner_collects_feature = Collects

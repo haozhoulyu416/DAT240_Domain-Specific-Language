@@ -1,0 +1,46 @@
+/**
+ */
+package Manufacture;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>QA Step</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link Manufacture.QAStep#getTransstep <em>Transstep</em>}</li>
+ * </ul>
+ *
+ * @see Manufacture.ManufacturePackage#getQAStep()
+ * @model
+ * @generated
+ */
+public interface QAStep extends Step {
+
+	/**
+	 * Returns the value of the '<em><b>Transstep</b></em>' reference.
+	 * It is bidirectional and its opposite is '{@link Manufacture.TransStep#getNextStep <em>Next Step</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Transstep</em>' reference.
+	 * @see #setTransstep(TransStep)
+	 * @see Manufacture.ManufacturePackage#getQAStep_Transstep()
+	 * @see Manufacture.TransStep#getNextStep
+	 * @model opposite="NextStep"
+	 * @generated
+	 */
+	TransStep getTransstep();
+
+	/**
+	 * Sets the value of the '{@link Manufacture.QAStep#getTransstep <em>Transstep</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Transstep</em>' reference.
+	 * @see #getTransstep()
+	 * @generated
+	 */
+	void setTransstep(TransStep value);
+} // QAStep

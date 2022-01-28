@@ -1,0 +1,38 @@
+/**
+ */
+package Manufacture;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Material Conditioner</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link Manufacture.MaterialConditioner#getPicks <em>Picks</em>}</li>
+ * </ul>
+ *
+ * @see Manufacture.ManufacturePackage#getMaterialConditioner()
+ * @model
+ * @generated
+ */
+public interface MaterialConditioner extends EObject {
+	/**
+	 * Returns the value of the '<em><b>Picks</b></em>' reference list.
+	 * The list contents are of type {@link Manufacture.Storage}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Picks</em>' reference list.
+	 * @see Manufacture.ManufacturePackage#getMaterialConditioner_Picks()
+	 * @model
+	 * @generated
+	 */
+	EList<Storage> getPicks();
+
+} // MaterialConditioner

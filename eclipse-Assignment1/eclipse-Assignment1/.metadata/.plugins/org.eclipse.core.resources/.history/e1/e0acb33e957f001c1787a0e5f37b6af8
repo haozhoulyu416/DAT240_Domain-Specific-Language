@@ -1,0 +1,157 @@
+/**
+ */
+package Manufacture.impl;
+
+import Manufacture.DecisionMake;
+import Manufacture.ManufacturePackage;
+import Manufacture.Step;
+
+import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Decision Make</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link Manufacture.impl.DecisionMakeImpl#getDecides <em>Decides</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class DecisionMakeImpl extends MinimalEObjectImpl.Container implements DecisionMake {
+	/**
+	 * The cached value of the '{@link #getDecides() <em>Decides</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDecides()
+	 * @generated
+	 * @ordered
+	 */
+	protected Step decides;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected DecisionMakeImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return ManufacturePackage.Literals.DECISION_MAKE;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Step getDecides() {
+		if (decides != null && decides.eIsProxy()) {
+			InternalEObject oldDecides = (InternalEObject)decides;
+			decides = (Step)eResolveProxy(oldDecides);
+			if (decides != oldDecides) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, ManufacturePackage.DECISION_MAKE__DECIDES, oldDecides, decides));
+			}
+		}
+		return decides;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Step basicGetDecides() {
+		return decides;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setDecides(Step newDecides) {
+		Step oldDecides = decides;
+		decides = newDecides;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ManufacturePackage.DECISION_MAKE__DECIDES, oldDecides, decides));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case ManufacturePackage.DECISION_MAKE__DECIDES:
+				if (resolve) return getDecides();
+				return basicGetDecides();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case ManufacturePackage.DECISION_MAKE__DECIDES:
+				setDecides((Step)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case ManufacturePackage.DECISION_MAKE__DECIDES:
+				setDecides((Step)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case ManufacturePackage.DECISION_MAKE__DECIDES:
+				return decides != null;
+		}
+		return super.eIsSet(featureID);
+	}
+
+} //DecisionMakeImpl

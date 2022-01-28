@@ -1,0 +1,164 @@
+/**
+ */
+package Manufacture;
+
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Step</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link Manufacture.Step#getType <em>Type</em>}</li>
+ *   <li>{@link Manufacture.Step#getControlsSpeed <em>Controls Speed</em>}</li>
+ *   <li>{@link Manufacture.Step#getAssignsPerson <em>Assigns Person</em>}</li>
+ *   <li>{@link Manufacture.Step#getContains <em>Contains</em>}</li>
+ *   <li>{@link Manufacture.Step#getUses <em>Uses</em>}</li>
+ *   <li>{@link Manufacture.Step#getProcedures <em>Procedures</em>}</li>
+ * </ul>
+ *
+ * @see Manufacture.ManufacturePackage#getStep()
+ * @model
+ * @generated
+ */
+public interface Step extends EObject {
+	/**
+	 * Returns the value of the '<em><b>Type</b></em>' attribute.
+	 * The literals are from the enumeration {@link Manufacture.StepTypes}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Type</em>' attribute.
+	 * @see Manufacture.StepTypes
+	 * @see #setType(StepTypes)
+	 * @see Manufacture.ManufacturePackage#getStep_Type()
+	 * @model dataType="Manufacture.StepTypes"
+	 * @generated
+	 */
+	StepTypes getType();
+
+	/**
+	 * Sets the value of the '{@link Manufacture.Step#getType <em>Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Type</em>' attribute.
+	 * @see Manufacture.StepTypes
+	 * @see #getType()
+	 * @generated
+	 */
+	void setType(StepTypes value);
+
+	/**
+	 * Returns the value of the '<em><b>Controls Speed</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Controls Speed</em>' reference.
+	 * @see #setControlsSpeed(SpeedController)
+	 * @see Manufacture.ManufacturePackage#getStep_ControlsSpeed()
+	 * @model
+	 * @generated
+	 */
+	SpeedController getControlsSpeed();
+
+	/**
+	 * Sets the value of the '{@link Manufacture.Step#getControlsSpeed <em>Controls Speed</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Controls Speed</em>' reference.
+	 * @see #getControlsSpeed()
+	 * @generated
+	 */
+	void setControlsSpeed(SpeedController value);
+
+	/**
+	 * Returns the value of the '<em><b>Assigns Person</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Assigns Person</em>' reference.
+	 * @see #setAssignsPerson(AssignController)
+	 * @see Manufacture.ManufacturePackage#getStep_AssignsPerson()
+	 * @model
+	 * @generated
+	 */
+	AssignController getAssignsPerson();
+
+	/**
+	 * Sets the value of the '{@link Manufacture.Step#getAssignsPerson <em>Assigns Person</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Assigns Person</em>' reference.
+	 * @see #getAssignsPerson()
+	 * @generated
+	 */
+	void setAssignsPerson(AssignController value);
+
+	/**
+	 * Returns the value of the '<em><b>Contains</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Contains</em>' reference.
+	 * @see #setContains(ManuSystem)
+	 * @see Manufacture.ManufacturePackage#getStep_Contains()
+	 * @model
+	 * @generated
+	 */
+	ManuSystem getContains();
+
+	/**
+	 * Sets the value of the '{@link Manufacture.Step#getContains <em>Contains</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Contains</em>' reference.
+	 * @see #getContains()
+	 * @generated
+	 */
+	void setContains(ManuSystem value);
+
+	/**
+	 * Returns the value of the '<em><b>Uses</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Uses</em>' reference.
+	 * @see #setUses(WorkPiece)
+	 * @see Manufacture.ManufacturePackage#getStep_Uses()
+	 * @model
+	 * @generated
+	 */
+	WorkPiece getUses();
+
+	/**
+	 * Sets the value of the '{@link Manufacture.Step#getUses <em>Uses</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Uses</em>' reference.
+	 * @see #getUses()
+	 * @generated
+	 */
+	void setUses(WorkPiece value);
+
+	/**
+	 * Returns the value of the '<em><b>Procedures</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Procedures</em>' reference.
+	 * @see #setProcedures(IntermediateProduct)
+	 * @see Manufacture.ManufacturePackage#getStep_Procedures()
+	 * @model
+	 * @generated
+	 */
+	IntermediateProduct getProcedures();
+
+	/**
+	 * Sets the value of the '{@link Manufacture.Step#getProcedures <em>Procedures</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Procedures</em>' reference.
+	 * @see #getProcedures()
+	 * @generated
+	 */
+	void setProcedures(IntermediateProduct value);
+
+} // Step

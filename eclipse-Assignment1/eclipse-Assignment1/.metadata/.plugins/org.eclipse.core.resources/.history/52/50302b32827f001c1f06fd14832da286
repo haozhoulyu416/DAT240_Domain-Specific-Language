@@ -1,0 +1,156 @@
+/**
+ */
+package Step1.impl;
+
+import Step1.Step1Package;
+import Step1.SubStep1;
+
+import Step1.SubStep2;
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.ecore.EClass;
+
+import org.eclipse.emf.ecore.InternalEObject;
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Sub Step1</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link Step1.impl.SubStep1Impl#getUses <em>Uses</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class SubStep1Impl extends MinimalEObjectImpl.Container implements SubStep1 {
+	/**
+	 * The cached value of the '{@link #getUses() <em>Uses</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getUses()
+	 * @generated
+	 * @ordered
+	 */
+	protected SubStep2 uses;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected SubStep1Impl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return Step1Package.Literals.SUB_STEP1;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SubStep2 getUses() {
+		if (uses != null && uses.eIsProxy()) {
+			InternalEObject oldUses = (InternalEObject)uses;
+			uses = (SubStep2)eResolveProxy(oldUses);
+			if (uses != oldUses) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, Step1Package.SUB_STEP1__USES, oldUses, uses));
+			}
+		}
+		return uses;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SubStep2 basicGetUses() {
+		return uses;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setUses(SubStep2 newUses) {
+		SubStep2 oldUses = uses;
+		uses = newUses;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, Step1Package.SUB_STEP1__USES, oldUses, uses));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case Step1Package.SUB_STEP1__USES:
+				if (resolve) return getUses();
+				return basicGetUses();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case Step1Package.SUB_STEP1__USES:
+				setUses((SubStep2)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case Step1Package.SUB_STEP1__USES:
+				setUses((SubStep2)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case Step1Package.SUB_STEP1__USES:
+				return uses != null;
+		}
+		return super.eIsSet(featureID);
+	}
+
+} //SubStep1Impl

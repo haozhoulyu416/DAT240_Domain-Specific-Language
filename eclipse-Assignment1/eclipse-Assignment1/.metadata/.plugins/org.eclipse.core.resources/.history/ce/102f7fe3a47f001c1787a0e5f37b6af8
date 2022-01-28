@@ -1,0 +1,45 @@
+/**
+ */
+package Manufacture;
+
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Manu Step</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link Manufacture.ManuStep#getNextStep1 <em>Next Step1</em>}</li>
+ * </ul>
+ *
+ * @see Manufacture.ManufacturePackage#getManuStep()
+ * @model
+ * @generated
+ */
+public interface ManuStep extends Step {
+
+	/**
+	 * Returns the value of the '<em><b>Next Step1</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Next Step1</em>' reference.
+	 * @see #setNextStep1(TransStep)
+	 * @see Manufacture.ManufacturePackage#getManuStep_NextStep1()
+	 * @model
+	 * @generated
+	 */
+	TransStep getNextStep1();
+
+	/**
+	 * Sets the value of the '{@link Manufacture.ManuStep#getNextStep1 <em>Next Step1</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Next Step1</em>' reference.
+	 * @see #getNextStep1()
+	 * @generated
+	 */
+	void setNextStep1(TransStep value);
+} // ManuStep

@@ -1,0 +1,208 @@
+/**
+ */
+package Step1.impl;
+
+import Step1.Step1Factory;
+import Step1.Step1Package;
+import Step1.SubStep1;
+import Step1.SubStep2;
+import Step1.SubSubStep1;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EPackage;
+
+import org.eclipse.emf.ecore.impl.EPackageImpl;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model <b>Package</b>.
+ * <!-- end-user-doc -->
+ * @generated
+ */
+public class Step1PackageImpl extends EPackageImpl implements Step1Package {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass subStep1EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass subStep2EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass subSubStep1EClass = null;
+
+	/**
+	 * Creates an instance of the model <b>Package</b>, registered with
+	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
+	 * package URI value.
+	 * <p>Note: the correct way to create the package is via the static
+	 * factory method {@link #init init()}, which also performs
+	 * initialization of the package, or returns the registered package,
+	 * if one already exists.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.eclipse.emf.ecore.EPackage.Registry
+	 * @see Step1.Step1Package#eNS_URI
+	 * @see #init()
+	 * @generated
+	 */
+	private Step1PackageImpl() {
+		super(eNS_URI, Step1Factory.eINSTANCE);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private static boolean isInited = false;
+
+	/**
+	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
+	 *
+	 * <p>This method is used to initialize {@link Step1Package#eINSTANCE} when that field is accessed.
+	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #eNS_URI
+	 * @see #createPackageContents()
+	 * @see #initializePackageContents()
+	 * @generated
+	 */
+	public static Step1Package init() {
+		if (isInited) return (Step1Package)EPackage.Registry.INSTANCE.getEPackage(Step1Package.eNS_URI);
+
+		// Obtain or create and register package
+		Object registeredStep1Package = EPackage.Registry.INSTANCE.get(eNS_URI);
+		Step1PackageImpl theStep1Package = registeredStep1Package instanceof Step1PackageImpl ? (Step1PackageImpl)registeredStep1Package : new Step1PackageImpl();
+
+		isInited = true;
+
+		// Create package meta-data objects
+		theStep1Package.createPackageContents();
+
+		// Initialize created meta-data
+		theStep1Package.initializePackageContents();
+
+		// Mark meta-data to indicate it can't be changed
+		theStep1Package.freeze();
+
+		// Update the registry and return the package
+		EPackage.Registry.INSTANCE.put(Step1Package.eNS_URI, theStep1Package);
+		return theStep1Package;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getSubStep1() {
+		return subStep1EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getSubStep2() {
+		return subStep2EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getSubSubStep1() {
+		return subSubStep1EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Step1Factory getStep1Factory() {
+		return (Step1Factory)getEFactoryInstance();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private boolean isCreated = false;
+
+	/**
+	 * Creates the meta-model objects for the package.  This method is
+	 * guarded to have no affect on any invocation but its first.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void createPackageContents() {
+		if (isCreated) return;
+		isCreated = true;
+
+		// Create classes and their features
+		subStep1EClass = createEClass(SUB_STEP1);
+
+		subStep2EClass = createEClass(SUB_STEP2);
+
+		subSubStep1EClass = createEClass(SUB_SUB_STEP1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private boolean isInitialized = false;
+
+	/**
+	 * Complete the initialization of the package and its meta-model.  This
+	 * method is guarded to have no affect on any invocation but its first.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void initializePackageContents() {
+		if (isInitialized) return;
+		isInitialized = true;
+
+		// Initialize package
+		setName(eNAME);
+		setNsPrefix(eNS_PREFIX);
+		setNsURI(eNS_URI);
+
+		// Create type parameters
+
+		// Set bounds for type parameters
+
+		// Add supertypes to classes
+		subSubStep1EClass.getESuperTypes().add(this.getSubStep2());
+
+		// Initialize classes, features, and operations; add parameters
+		initEClass(subStep1EClass, SubStep1.class, "SubStep1", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(subStep2EClass, SubStep2.class, "SubStep2", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(subSubStep1EClass, SubSubStep1.class, "SubSubStep1", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		// Create resource
+		createResource(eNS_URI);
+	}
+
+} //Step1PackageImpl

@@ -1,0 +1,155 @@
+/**
+ */
+package Manufacture.impl;
+
+import Manufacture.ManufacturePackage;
+import Manufacture.MaterialConditioner;
+import Manufacture.Storage;
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.ecore.EClass;
+
+import org.eclipse.emf.ecore.InternalEObject;
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Material Conditioner</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link Manufacture.impl.MaterialConditionerImpl#getCollects <em>Collects</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class MaterialConditionerImpl extends MinimalEObjectImpl.Container implements MaterialConditioner {
+	/**
+	 * The cached value of the '{@link #getCollects() <em>Collects</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCollects()
+	 * @generated
+	 * @ordered
+	 */
+	protected Storage collects;
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected MaterialConditionerImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return ManufacturePackage.Literals.MATERIAL_CONDITIONER;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Storage getCollects() {
+		if (collects != null && collects.eIsProxy()) {
+			InternalEObject oldCollects = (InternalEObject)collects;
+			collects = (Storage)eResolveProxy(oldCollects);
+			if (collects != oldCollects) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, ManufacturePackage.MATERIAL_CONDITIONER__COLLECTS, oldCollects, collects));
+			}
+		}
+		return collects;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Storage basicGetCollects() {
+		return collects;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setCollects(Storage newCollects) {
+		Storage oldCollects = collects;
+		collects = newCollects;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ManufacturePackage.MATERIAL_CONDITIONER__COLLECTS, oldCollects, collects));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case ManufacturePackage.MATERIAL_CONDITIONER__COLLECTS:
+				if (resolve) return getCollects();
+				return basicGetCollects();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case ManufacturePackage.MATERIAL_CONDITIONER__COLLECTS:
+				setCollects((Storage)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case ManufacturePackage.MATERIAL_CONDITIONER__COLLECTS:
+				setCollects((Storage)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case ManufacturePackage.MATERIAL_CONDITIONER__COLLECTS:
+				return collects != null;
+		}
+		return super.eIsSet(featureID);
+	}
+
+} //MaterialConditionerImpl

@@ -1,0 +1,45 @@
+/**
+ */
+package Manufacture;
+
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Person1</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link Manufacture.Person1#getName1 <em>Name1</em>}</li>
+ * </ul>
+ *
+ * @see Manufacture.ManufacturePackage#getPerson1()
+ * @model
+ * @generated
+ */
+public interface Person1 extends Person {
+	/**
+	 * Returns the value of the '<em><b>Name1</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Name1</em>' attribute.
+	 * @see #setName1(String)
+	 * @see Manufacture.ManufacturePackage#getPerson1_Name1()
+	 * @model
+	 * @generated
+	 */
+	String getName1();
+
+	/**
+	 * Sets the value of the '{@link Manufacture.Person1#getName1 <em>Name1</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Name1</em>' attribute.
+	 * @see #getName1()
+	 * @generated
+	 */
+	void setName1(String value);
+
+} // Person1

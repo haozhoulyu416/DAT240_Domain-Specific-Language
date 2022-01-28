@@ -1,0 +1,460 @@
+/**
+ */
+package Manufacture.impl;
+
+import Manufacture.AssignController;
+import Manufacture.IntermediateProduct;
+import Manufacture.ManuSystem;
+import Manufacture.ManufacturePackage;
+import Manufacture.SpeedController;
+import Manufacture.Step;
+import Manufacture.StepTypes;
+import Manufacture.WorkPiece;
+
+import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Step</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link Manufacture.impl.StepImpl#getType <em>Type</em>}</li>
+ *   <li>{@link Manufacture.impl.StepImpl#getControlsSpeed <em>Controls Speed</em>}</li>
+ *   <li>{@link Manufacture.impl.StepImpl#getAssignsPerson <em>Assigns Person</em>}</li>
+ *   <li>{@link Manufacture.impl.StepImpl#getContains <em>Contains</em>}</li>
+ *   <li>{@link Manufacture.impl.StepImpl#getUses <em>Uses</em>}</li>
+ *   <li>{@link Manufacture.impl.StepImpl#getProcedures <em>Procedures</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class StepImpl extends MinimalEObjectImpl.Container implements Step {
+	/**
+	 * The cached value of the '{@link #getType() <em>Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getType()
+	 * @generated
+	 * @ordered
+	 */
+	protected StepTypes type;
+
+	/**
+	 * The cached value of the '{@link #getControlsSpeed() <em>Controls Speed</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getControlsSpeed()
+	 * @generated
+	 * @ordered
+	 */
+	protected SpeedController controlsSpeed;
+
+	/**
+	 * The cached value of the '{@link #getAssignsPerson() <em>Assigns Person</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAssignsPerson()
+	 * @generated
+	 * @ordered
+	 */
+	protected AssignController assignsPerson;
+
+	/**
+	 * The cached value of the '{@link #getContains() <em>Contains</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getContains()
+	 * @generated
+	 * @ordered
+	 */
+	protected ManuSystem contains;
+
+	/**
+	 * The cached value of the '{@link #getUses() <em>Uses</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getUses()
+	 * @generated
+	 * @ordered
+	 */
+	protected WorkPiece uses;
+
+	/**
+	 * The cached value of the '{@link #getProcedures() <em>Procedures</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getProcedures()
+	 * @generated
+	 * @ordered
+	 */
+	protected IntermediateProduct procedures;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected StepImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return ManufacturePackage.Literals.STEP;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public StepTypes getType() {
+		return type;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setType(StepTypes newType) {
+		StepTypes oldType = type;
+		type = newType == null ? null : newType;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ManufacturePackage.STEP__TYPE, oldType, type));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SpeedController getControlsSpeed() {
+		if (controlsSpeed != null && controlsSpeed.eIsProxy()) {
+			InternalEObject oldControlsSpeed = (InternalEObject)controlsSpeed;
+			controlsSpeed = (SpeedController)eResolveProxy(oldControlsSpeed);
+			if (controlsSpeed != oldControlsSpeed) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, ManufacturePackage.STEP__CONTROLS_SPEED, oldControlsSpeed, controlsSpeed));
+			}
+		}
+		return controlsSpeed;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SpeedController basicGetControlsSpeed() {
+		return controlsSpeed;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setControlsSpeed(SpeedController newControlsSpeed) {
+		SpeedController oldControlsSpeed = controlsSpeed;
+		controlsSpeed = newControlsSpeed;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ManufacturePackage.STEP__CONTROLS_SPEED, oldControlsSpeed, controlsSpeed));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AssignController getAssignsPerson() {
+		if (assignsPerson != null && assignsPerson.eIsProxy()) {
+			InternalEObject oldAssignsPerson = (InternalEObject)assignsPerson;
+			assignsPerson = (AssignController)eResolveProxy(oldAssignsPerson);
+			if (assignsPerson != oldAssignsPerson) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, ManufacturePackage.STEP__ASSIGNS_PERSON, oldAssignsPerson, assignsPerson));
+			}
+		}
+		return assignsPerson;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AssignController basicGetAssignsPerson() {
+		return assignsPerson;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setAssignsPerson(AssignController newAssignsPerson) {
+		AssignController oldAssignsPerson = assignsPerson;
+		assignsPerson = newAssignsPerson;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ManufacturePackage.STEP__ASSIGNS_PERSON, oldAssignsPerson, assignsPerson));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ManuSystem getContains() {
+		if (contains != null && contains.eIsProxy()) {
+			InternalEObject oldContains = (InternalEObject)contains;
+			contains = (ManuSystem)eResolveProxy(oldContains);
+			if (contains != oldContains) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, ManufacturePackage.STEP__CONTAINS, oldContains, contains));
+			}
+		}
+		return contains;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ManuSystem basicGetContains() {
+		return contains;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setContains(ManuSystem newContains) {
+		ManuSystem oldContains = contains;
+		contains = newContains;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ManufacturePackage.STEP__CONTAINS, oldContains, contains));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public WorkPiece getUses() {
+		if (uses != null && uses.eIsProxy()) {
+			InternalEObject oldUses = (InternalEObject)uses;
+			uses = (WorkPiece)eResolveProxy(oldUses);
+			if (uses != oldUses) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, ManufacturePackage.STEP__USES, oldUses, uses));
+			}
+		}
+		return uses;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public WorkPiece basicGetUses() {
+		return uses;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setUses(WorkPiece newUses) {
+		WorkPiece oldUses = uses;
+		uses = newUses;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ManufacturePackage.STEP__USES, oldUses, uses));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IntermediateProduct getProcedures() {
+		if (procedures != null && procedures.eIsProxy()) {
+			InternalEObject oldProcedures = (InternalEObject)procedures;
+			procedures = (IntermediateProduct)eResolveProxy(oldProcedures);
+			if (procedures != oldProcedures) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, ManufacturePackage.STEP__PROCEDURES, oldProcedures, procedures));
+			}
+		}
+		return procedures;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IntermediateProduct basicGetProcedures() {
+		return procedures;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setProcedures(IntermediateProduct newProcedures) {
+		IntermediateProduct oldProcedures = procedures;
+		procedures = newProcedures;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ManufacturePackage.STEP__PROCEDURES, oldProcedures, procedures));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case ManufacturePackage.STEP__TYPE:
+				return getType();
+			case ManufacturePackage.STEP__CONTROLS_SPEED:
+				if (resolve) return getControlsSpeed();
+				return basicGetControlsSpeed();
+			case ManufacturePackage.STEP__ASSIGNS_PERSON:
+				if (resolve) return getAssignsPerson();
+				return basicGetAssignsPerson();
+			case ManufacturePackage.STEP__CONTAINS:
+				if (resolve) return getContains();
+				return basicGetContains();
+			case ManufacturePackage.STEP__USES:
+				if (resolve) return getUses();
+				return basicGetUses();
+			case ManufacturePackage.STEP__PROCEDURES:
+				if (resolve) return getProcedures();
+				return basicGetProcedures();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case ManufacturePackage.STEP__TYPE:
+				setType(newValue);
+				return;
+			case ManufacturePackage.STEP__CONTROLS_SPEED:
+				setControlsSpeed((SpeedController)newValue);
+				return;
+			case ManufacturePackage.STEP__ASSIGNS_PERSON:
+				setAssignsPerson((AssignController)newValue);
+				return;
+			case ManufacturePackage.STEP__CONTAINS:
+				setContains((ManuSystem)newValue);
+				return;
+			case ManufacturePackage.STEP__USES:
+				setUses((WorkPiece)newValue);
+				return;
+			case ManufacturePackage.STEP__PROCEDURES:
+				setProcedures((IntermediateProduct)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case ManufacturePackage.STEP__TYPE:
+				setType((StepTypes)null);
+				return;
+			case ManufacturePackage.STEP__CONTROLS_SPEED:
+				setControlsSpeed((SpeedController)null);
+				return;
+			case ManufacturePackage.STEP__ASSIGNS_PERSON:
+				setAssignsPerson((AssignController)null);
+				return;
+			case ManufacturePackage.STEP__CONTAINS:
+				setContains((ManuSystem)null);
+				return;
+			case ManufacturePackage.STEP__USES:
+				setUses((WorkPiece)null);
+				return;
+			case ManufacturePackage.STEP__PROCEDURES:
+				setProcedures((IntermediateProduct)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case ManufacturePackage.STEP__TYPE:
+				return type != null;
+			case ManufacturePackage.STEP__CONTROLS_SPEED:
+				return controlsSpeed != null;
+			case ManufacturePackage.STEP__ASSIGNS_PERSON:
+				return assignsPerson != null;
+			case ManufacturePackage.STEP__CONTAINS:
+				return contains != null;
+			case ManufacturePackage.STEP__USES:
+				return uses != null;
+			case ManufacturePackage.STEP__PROCEDURES:
+				return procedures != null;
+		}
+		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuilder result = new StringBuilder(super.toString());
+		result.append(" (type: ");
+		result.append(type);
+		result.append(')');
+		return result.toString();
+	}
+
+} //StepImpl

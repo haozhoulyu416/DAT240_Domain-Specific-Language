@@ -1,0 +1,46 @@
+/**
+ */
+package Manufacture;
+
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Controller</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link Manufacture.Controller#getControls <em>Controls</em>}</li>
+ * </ul>
+ *
+ * @see Manufacture.ManufacturePackage#getController()
+ * @model
+ * @generated
+ */
+public interface Controller extends EObject {
+	/**
+	 * Returns the value of the '<em><b>Controls</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Controls</em>' reference.
+	 * @see #setControls(ManuSystem)
+	 * @see Manufacture.ManufacturePackage#getController_Controls()
+	 * @model
+	 * @generated
+	 */
+	ManuSystem getControls();
+
+	/**
+	 * Sets the value of the '{@link Manufacture.Controller#getControls <em>Controls</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Controls</em>' reference.
+	 * @see #getControls()
+	 * @generated
+	 */
+	void setControls(ManuSystem value);
+
+} // Controller

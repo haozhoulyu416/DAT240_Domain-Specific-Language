@@ -1,0 +1,157 @@
+/**
+ */
+package Manufacture.impl;
+
+import Manufacture.Controller;
+import Manufacture.ManuSystem;
+import Manufacture.ManufacturePackage;
+
+import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Controller</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link Manufacture.impl.ControllerImpl#getControls <em>Controls</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class ControllerImpl extends MinimalEObjectImpl.Container implements Controller {
+	/**
+	 * The cached value of the '{@link #getControls() <em>Controls</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getControls()
+	 * @generated
+	 * @ordered
+	 */
+	protected ManuSystem controls;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ControllerImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return ManufacturePackage.Literals.CONTROLLER;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ManuSystem getControls() {
+		if (controls != null && controls.eIsProxy()) {
+			InternalEObject oldControls = (InternalEObject)controls;
+			controls = (ManuSystem)eResolveProxy(oldControls);
+			if (controls != oldControls) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, ManufacturePackage.CONTROLLER__CONTROLS, oldControls, controls));
+			}
+		}
+		return controls;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ManuSystem basicGetControls() {
+		return controls;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setControls(ManuSystem newControls) {
+		ManuSystem oldControls = controls;
+		controls = newControls;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ManufacturePackage.CONTROLLER__CONTROLS, oldControls, controls));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case ManufacturePackage.CONTROLLER__CONTROLS:
+				if (resolve) return getControls();
+				return basicGetControls();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case ManufacturePackage.CONTROLLER__CONTROLS:
+				setControls((ManuSystem)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case ManufacturePackage.CONTROLLER__CONTROLS:
+				setControls((ManuSystem)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case ManufacturePackage.CONTROLLER__CONTROLS:
+				return controls != null;
+		}
+		return super.eIsSet(featureID);
+	}
+
+} //ControllerImpl

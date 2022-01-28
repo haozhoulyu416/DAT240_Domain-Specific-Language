@@ -1,0 +1,38 @@
+/**
+ */
+package Step1;
+
+import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.ecore.EObject;
+
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Sub Sub Step1</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link Step1.SubSubStep1#getSubstep2 <em>Substep2</em>}</li>
+ * </ul>
+ *
+ * @see Step1.Step1Package#getSubSubStep1()
+ * @model
+ * @generated
+ */
+public interface SubSubStep1 extends EObject {
+
+	/**
+	 * Returns the value of the '<em><b>Substep2</b></em>' containment reference list.
+	 * The list contents are of type {@link Step1.SubStep2}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Substep2</em>' containment reference list.
+	 * @see Step1.Step1Package#getSubSubStep1_Substep2()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<SubStep2> getSubstep2();
+} // SubSubStep1

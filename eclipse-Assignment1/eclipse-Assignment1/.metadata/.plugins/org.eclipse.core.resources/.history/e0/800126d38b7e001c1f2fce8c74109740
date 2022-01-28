@@ -1,0 +1,227 @@
+/**
+ */
+package Step1;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EPackage;
+
+/**
+ * <!-- begin-user-doc -->
+ * The <b>Package</b> for the model.
+ * It contains accessors for the meta objects to represent
+ * <ul>
+ *   <li>each class,</li>
+ *   <li>each feature of each class,</li>
+ *   <li>each operation of each class,</li>
+ *   <li>each enum,</li>
+ *   <li>and each data type</li>
+ * </ul>
+ * <!-- end-user-doc -->
+ * @see Step1.Step1Factory
+ * @model kind="package"
+ * @generated
+ */
+public interface Step1Package extends EPackage {
+	/**
+	 * The package name.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	String eNAME = "Step1";
+
+	/**
+	 * The package namespace URI.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	String eNS_URI = "https://www.step1.org/DSL";
+
+	/**
+	 * The package namespace name.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	String eNS_PREFIX = "step1";
+
+	/**
+	 * The singleton instance of the package.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	Step1Package eINSTANCE = Step1.impl.Step1PackageImpl.init();
+
+	/**
+	 * The meta object id for the '{@link Step1.impl.SubStep1Impl <em>Sub Step1</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see Step1.impl.SubStep1Impl
+	 * @see Step1.impl.Step1PackageImpl#getSubStep1()
+	 * @generated
+	 */
+	int SUB_STEP1 = 0;
+
+	/**
+	 * The number of structural features of the '<em>Sub Step1</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUB_STEP1_FEATURE_COUNT = 0;
+
+	/**
+	 * The number of operations of the '<em>Sub Step1</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUB_STEP1_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link Step1.impl.SubStep2Impl <em>Sub Step2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see Step1.impl.SubStep2Impl
+	 * @see Step1.impl.Step1PackageImpl#getSubStep2()
+	 * @generated
+	 */
+	int SUB_STEP2 = 1;
+
+	/**
+	 * The number of structural features of the '<em>Sub Step2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUB_STEP2_FEATURE_COUNT = 0;
+
+	/**
+	 * The number of operations of the '<em>Sub Step2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUB_STEP2_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link Step1.impl.SubSubStep1Impl <em>Sub Sub Step1</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see Step1.impl.SubSubStep1Impl
+	 * @see Step1.impl.Step1PackageImpl#getSubSubStep1()
+	 * @generated
+	 */
+	int SUB_SUB_STEP1 = 2;
+
+	/**
+	 * The number of structural features of the '<em>Sub Sub Step1</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUB_SUB_STEP1_FEATURE_COUNT = SUB_STEP2_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Sub Sub Step1</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUB_SUB_STEP1_OPERATION_COUNT = SUB_STEP2_OPERATION_COUNT + 0;
+
+
+	/**
+	 * Returns the meta object for class '{@link Step1.SubStep1 <em>Sub Step1</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Sub Step1</em>'.
+	 * @see Step1.SubStep1
+	 * @generated
+	 */
+	EClass getSubStep1();
+
+	/**
+	 * Returns the meta object for class '{@link Step1.SubStep2 <em>Sub Step2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Sub Step2</em>'.
+	 * @see Step1.SubStep2
+	 * @generated
+	 */
+	EClass getSubStep2();
+
+	/**
+	 * Returns the meta object for class '{@link Step1.SubSubStep1 <em>Sub Sub Step1</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Sub Sub Step1</em>'.
+	 * @see Step1.SubSubStep1
+	 * @generated
+	 */
+	EClass getSubSubStep1();
+
+	/**
+	 * Returns the factory that creates the instances of the model.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the factory that creates the instances of the model.
+	 * @generated
+	 */
+	Step1Factory getStep1Factory();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * Defines literals for the meta objects that represent
+	 * <ul>
+	 *   <li>each class,</li>
+	 *   <li>each feature of each class,</li>
+	 *   <li>each operation of each class,</li>
+	 *   <li>each enum,</li>
+	 *   <li>and each data type</li>
+	 * </ul>
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	interface Literals {
+		/**
+		 * The meta object literal for the '{@link Step1.impl.SubStep1Impl <em>Sub Step1</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see Step1.impl.SubStep1Impl
+		 * @see Step1.impl.Step1PackageImpl#getSubStep1()
+		 * @generated
+		 */
+		EClass SUB_STEP1 = eINSTANCE.getSubStep1();
+
+		/**
+		 * The meta object literal for the '{@link Step1.impl.SubStep2Impl <em>Sub Step2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see Step1.impl.SubStep2Impl
+		 * @see Step1.impl.Step1PackageImpl#getSubStep2()
+		 * @generated
+		 */
+		EClass SUB_STEP2 = eINSTANCE.getSubStep2();
+
+		/**
+		 * The meta object literal for the '{@link Step1.impl.SubSubStep1Impl <em>Sub Sub Step1</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see Step1.impl.SubSubStep1Impl
+		 * @see Step1.impl.Step1PackageImpl#getSubSubStep1()
+		 * @generated
+		 */
+		EClass SUB_SUB_STEP1 = eINSTANCE.getSubSubStep1();
+
+	}
+
+} //Step1Package

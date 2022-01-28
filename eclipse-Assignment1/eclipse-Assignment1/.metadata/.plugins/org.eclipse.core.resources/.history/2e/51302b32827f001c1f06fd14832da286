@@ -1,0 +1,128 @@
+/**
+ */
+package Step1.impl;
+
+import Step1.*;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.EPackage;
+
+import org.eclipse.emf.ecore.impl.EFactoryImpl;
+
+import org.eclipse.emf.ecore.plugin.EcorePlugin;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model <b>Factory</b>.
+ * <!-- end-user-doc -->
+ * @generated
+ */
+public class Step1FactoryImpl extends EFactoryImpl implements Step1Factory {
+	/**
+	 * Creates the default factory implementation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static Step1Factory init() {
+		try {
+			Step1Factory theStep1Factory = (Step1Factory)EPackage.Registry.INSTANCE.getEFactory(Step1Package.eNS_URI);
+			if (theStep1Factory != null) {
+				return theStep1Factory;
+			}
+		}
+		catch (Exception exception) {
+			EcorePlugin.INSTANCE.log(exception);
+		}
+		return new Step1FactoryImpl();
+	}
+
+	/**
+	 * Creates an instance of the factory.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Step1FactoryImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EObject create(EClass eClass) {
+		switch (eClass.getClassifierID()) {
+			case Step1Package.SUB_STEP1: return createSubStep1();
+			case Step1Package.SUB_STEP2: return createSubStep2();
+			case Step1Package.SUB_SUB_STEP1: return createSubSubStep1();
+			case Step1Package.SUB_SUB_STEP2: return createSubSubStep2();
+			default:
+				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SubStep1 createSubStep1() {
+		SubStep1Impl subStep1 = new SubStep1Impl();
+		return subStep1;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SubStep2 createSubStep2() {
+		SubStep2Impl subStep2 = new SubStep2Impl();
+		return subStep2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SubSubStep1 createSubSubStep1() {
+		SubSubStep1Impl subSubStep1 = new SubSubStep1Impl();
+		return subSubStep1;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SubSubStep2 createSubSubStep2() {
+		SubSubStep2Impl subSubStep2 = new SubSubStep2Impl();
+		return subSubStep2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Step1Package getStep1Package() {
+		return (Step1Package)getEPackage();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @deprecated
+	 * @generated
+	 */
+	@Deprecated
+	public static Step1Package getPackage() {
+		return Step1Package.eINSTANCE;
+	}
+
+} //Step1FactoryImpl

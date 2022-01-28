@@ -1,0 +1,18 @@
+/**
+ */
+package Step1;
+
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Sub Step1</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ *
+ * @see Step1.Step1Package#getSubStep1()
+ * @model
+ * @generated
+ */
+public interface SubStep1 extends EObject {
+} // SubStep1

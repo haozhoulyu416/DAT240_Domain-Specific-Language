@@ -1,0 +1,39 @@
+/**
+ */
+package Step1.impl;
+
+import Step1.Step1Package;
+import Step1.SubStep2;
+
+import org.eclipse.emf.ecore.EClass;
+
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Sub Step2</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * @generated
+ */
+public class SubStep2Impl extends MinimalEObjectImpl.Container implements SubStep2 {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected SubStep2Impl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return Step1Package.Literals.SUB_STEP2;
+	}
+
+} //SubStep2Impl

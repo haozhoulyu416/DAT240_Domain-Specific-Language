@@ -1,0 +1,1384 @@
+/**
+ */
+package Manufacture;
+
+import org.eclipse.emf.ecore.EAttribute;
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EEnum;
+import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.emf.ecore.EReference;
+
+/**
+ * <!-- begin-user-doc -->
+ * The <b>Package</b> for the model.
+ * It contains accessors for the meta objects to represent
+ * <ul>
+ *   <li>each class,</li>
+ *   <li>each feature of each class,</li>
+ *   <li>each operation of each class,</li>
+ *   <li>each enum,</li>
+ *   <li>and each data type</li>
+ * </ul>
+ * <!-- end-user-doc -->
+ * @see Manufacture.ManufactureFactory
+ * @model kind="package"
+ * @generated
+ */
+public interface ManufacturePackage extends EPackage {
+	/**
+	 * The package name.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	String eNAME = "Manufacture";
+
+	/**
+	 * The package namespace URI.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	String eNS_URI = "https://www.manufacture.org/DSL";
+
+	/**
+	 * The package namespace name.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	String eNS_PREFIX = "Manufacture";
+
+	/**
+	 * The singleton instance of the package.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	ManufacturePackage eINSTANCE = Manufacture.impl.ManufacturePackageImpl.init();
+
+	/**
+	 * The meta object id for the '{@link Manufacture.impl.NamedElementImpl <em>Named Element</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see Manufacture.impl.NamedElementImpl
+	 * @see Manufacture.impl.ManufacturePackageImpl#getNamedElement()
+	 * @generated
+	 */
+	int NAMED_ELEMENT = 2;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAMED_ELEMENT__NAME = 0;
+
+	/**
+	 * The number of structural features of the '<em>Named Element</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAMED_ELEMENT_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Named Element</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAMED_ELEMENT_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link Manufacture.impl.ManuSystemImpl <em>Manu System</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see Manufacture.impl.ManuSystemImpl
+	 * @see Manufacture.impl.ManufacturePackageImpl#getManuSystem()
+	 * @generated
+	 */
+	int MANU_SYSTEM = 0;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MANU_SYSTEM__NAME = NAMED_ELEMENT__NAME;
+
+	/**
+	 * The feature id for the '<em><b>First Step</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MANU_SYSTEM__FIRST_STEP = NAMED_ELEMENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Intermediateproducts</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MANU_SYSTEM__INTERMEDIATEPRODUCTS = NAMED_ELEMENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Workpiece</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MANU_SYSTEM__WORKPIECE = NAMED_ELEMENT_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of structural features of the '<em>Manu System</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MANU_SYSTEM_FEATURE_COUNT = NAMED_ELEMENT_FEATURE_COUNT + 3;
+
+	/**
+	 * The number of operations of the '<em>Manu System</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MANU_SYSTEM_OPERATION_COUNT = NAMED_ELEMENT_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link Manufacture.impl.StepImpl <em>Step</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see Manufacture.impl.StepImpl
+	 * @see Manufacture.impl.ManufacturePackageImpl#getStep()
+	 * @generated
+	 */
+	int STEP = 1;
+
+	/**
+	 * The feature id for the '<em><b>Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STEP__TYPE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Controls Speed</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STEP__CONTROLS_SPEED = 1;
+
+	/**
+	 * The feature id for the '<em><b>Assigns Person</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STEP__ASSIGNS_PERSON = 2;
+
+	/**
+	 * The feature id for the '<em><b>Contains</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STEP__CONTAINS = 3;
+
+	/**
+	 * The feature id for the '<em><b>Uses</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STEP__USES = 4;
+
+	/**
+	 * The feature id for the '<em><b>Procedures</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STEP__PROCEDURES = 5;
+
+	/**
+	 * The number of structural features of the '<em>Step</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STEP_FEATURE_COUNT = 6;
+
+	/**
+	 * The number of operations of the '<em>Step</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STEP_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link Manufacture.impl.SpeedControllerImpl <em>Speed Controller</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see Manufacture.impl.SpeedControllerImpl
+	 * @see Manufacture.impl.ManufacturePackageImpl#getSpeedController()
+	 * @generated
+	 */
+	int SPEED_CONTROLLER = 3;
+
+	/**
+	 * The number of structural features of the '<em>Speed Controller</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SPEED_CONTROLLER_FEATURE_COUNT = 0;
+
+	/**
+	 * The number of operations of the '<em>Speed Controller</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SPEED_CONTROLLER_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link Manufacture.impl.AssignControllerImpl <em>Assign Controller</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see Manufacture.impl.AssignControllerImpl
+	 * @see Manufacture.impl.ManufacturePackageImpl#getAssignController()
+	 * @generated
+	 */
+	int ASSIGN_CONTROLLER = 4;
+
+	/**
+	 * The feature id for the '<em><b>Person</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSIGN_CONTROLLER__PERSON = 0;
+
+	/**
+	 * The number of structural features of the '<em>Assign Controller</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSIGN_CONTROLLER_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Assign Controller</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSIGN_CONTROLLER_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link Manufacture.impl.PersonImpl <em>Person</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see Manufacture.impl.PersonImpl
+	 * @see Manufacture.impl.ManufacturePackageImpl#getPerson()
+	 * @generated
+	 */
+	int PERSON = 5;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON__NAME = 0;
+
+	/**
+	 * The number of structural features of the '<em>Person</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Person</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link Manufacture.impl.Person1Impl <em>Person1</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see Manufacture.impl.Person1Impl
+	 * @see Manufacture.impl.ManufacturePackageImpl#getPerson1()
+	 * @generated
+	 */
+	int PERSON1 = 6;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON1__NAME = PERSON__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Name1</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON1__NAME1 = PERSON_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Person1</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON1_FEATURE_COUNT = PERSON_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Person1</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON1_OPERATION_COUNT = PERSON_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link Manufacture.impl.Person2Impl <em>Person2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see Manufacture.impl.Person2Impl
+	 * @see Manufacture.impl.ManufacturePackageImpl#getPerson2()
+	 * @generated
+	 */
+	int PERSON2 = 7;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON2__NAME = PERSON__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Name2</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON2__NAME2 = PERSON_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Person2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON2_FEATURE_COUNT = PERSON_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Person2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON2_OPERATION_COUNT = PERSON_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link Manufacture.impl.UsableImpl <em>Usable</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see Manufacture.impl.UsableImpl
+	 * @see Manufacture.impl.ManufacturePackageImpl#getUsable()
+	 * @generated
+	 */
+	int USABLE = 11;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USABLE__NAME = NAMED_ELEMENT__NAME;
+
+	/**
+	 * The number of structural features of the '<em>Usable</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USABLE_FEATURE_COUNT = NAMED_ELEMENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Usable</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USABLE_OPERATION_COUNT = NAMED_ELEMENT_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link Manufacture.impl.WorkPieceImpl <em>Work Piece</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see Manufacture.impl.WorkPieceImpl
+	 * @see Manufacture.impl.ManufacturePackageImpl#getWorkPiece()
+	 * @generated
+	 */
+	int WORK_PIECE = 8;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORK_PIECE__NAME = USABLE__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORK_PIECE__TYPE = USABLE_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Kilogram</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORK_PIECE__KILOGRAM = USABLE_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Cubic</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORK_PIECE__CUBIC = USABLE_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of structural features of the '<em>Work Piece</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORK_PIECE_FEATURE_COUNT = USABLE_FEATURE_COUNT + 3;
+
+	/**
+	 * The number of operations of the '<em>Work Piece</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORK_PIECE_OPERATION_COUNT = USABLE_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link Manufacture.impl.StorageImpl <em>Storage</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see Manufacture.impl.StorageImpl
+	 * @see Manufacture.impl.ManufacturePackageImpl#getStorage()
+	 * @generated
+	 */
+	int STORAGE = 9;
+
+	/**
+	 * The feature id for the '<em><b>Work Piece Stores</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORAGE__WORK_PIECE_STORES = 0;
+
+	/**
+	 * The feature id for the '<em><b>Intermediate Storages</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORAGE__INTERMEDIATE_STORAGES = 1;
+
+	/**
+	 * The number of structural features of the '<em>Storage</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORAGE_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Storage</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORAGE_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link Manufacture.impl.IntermediateProductImpl <em>Intermediate Product</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see Manufacture.impl.IntermediateProductImpl
+	 * @see Manufacture.impl.ManufacturePackageImpl#getIntermediateProduct()
+	 * @generated
+	 */
+	int INTERMEDIATE_PRODUCT = 10;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERMEDIATE_PRODUCT__NAME = USABLE__NAME;
+
+	/**
+	 * The number of structural features of the '<em>Intermediate Product</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERMEDIATE_PRODUCT_FEATURE_COUNT = USABLE_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Intermediate Product</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERMEDIATE_PRODUCT_OPERATION_COUNT = USABLE_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link Manufacture.impl.ControllerImpl <em>Controller</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see Manufacture.impl.ControllerImpl
+	 * @see Manufacture.impl.ManufacturePackageImpl#getController()
+	 * @generated
+	 */
+	int CONTROLLER = 12;
+
+	/**
+	 * The feature id for the '<em><b>Controls</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER__CONTROLS = 0;
+
+	/**
+	 * The number of structural features of the '<em>Controller</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Controller</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link Manufacture.StepTypes <em>Step Types</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see Manufacture.StepTypes
+	 * @see Manufacture.impl.ManufacturePackageImpl#getStepTypes()
+	 * @generated
+	 */
+	int STEP_TYPES = 13;
+
+	/**
+	 * The meta object id for the '{@link Manufacture.WorkPieceTypes <em>Work Piece Types</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see Manufacture.WorkPieceTypes
+	 * @see Manufacture.impl.ManufacturePackageImpl#getWorkPieceTypes()
+	 * @generated
+	 */
+	int WORK_PIECE_TYPES = 14;
+
+
+	/**
+	 * Returns the meta object for class '{@link Manufacture.ManuSystem <em>Manu System</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Manu System</em>'.
+	 * @see Manufacture.ManuSystem
+	 * @generated
+	 */
+	EClass getManuSystem();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link Manufacture.ManuSystem#getFirstStep <em>First Step</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>First Step</em>'.
+	 * @see Manufacture.ManuSystem#getFirstStep()
+	 * @see #getManuSystem()
+	 * @generated
+	 */
+	EReference getManuSystem_FirstStep();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link Manufacture.ManuSystem#getIntermediateproducts <em>Intermediateproducts</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Intermediateproducts</em>'.
+	 * @see Manufacture.ManuSystem#getIntermediateproducts()
+	 * @see #getManuSystem()
+	 * @generated
+	 */
+	EReference getManuSystem_Intermediateproducts();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link Manufacture.ManuSystem#getWorkpiece <em>Workpiece</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Workpiece</em>'.
+	 * @see Manufacture.ManuSystem#getWorkpiece()
+	 * @see #getManuSystem()
+	 * @generated
+	 */
+	EReference getManuSystem_Workpiece();
+
+	/**
+	 * Returns the meta object for class '{@link Manufacture.Step <em>Step</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Step</em>'.
+	 * @see Manufacture.Step
+	 * @generated
+	 */
+	EClass getStep();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Manufacture.Step#getType <em>Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Type</em>'.
+	 * @see Manufacture.Step#getType()
+	 * @see #getStep()
+	 * @generated
+	 */
+	EAttribute getStep_Type();
+
+	/**
+	 * Returns the meta object for the reference '{@link Manufacture.Step#getControlsSpeed <em>Controls Speed</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Controls Speed</em>'.
+	 * @see Manufacture.Step#getControlsSpeed()
+	 * @see #getStep()
+	 * @generated
+	 */
+	EReference getStep_ControlsSpeed();
+
+	/**
+	 * Returns the meta object for the reference '{@link Manufacture.Step#getAssignsPerson <em>Assigns Person</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Assigns Person</em>'.
+	 * @see Manufacture.Step#getAssignsPerson()
+	 * @see #getStep()
+	 * @generated
+	 */
+	EReference getStep_AssignsPerson();
+
+	/**
+	 * Returns the meta object for the reference '{@link Manufacture.Step#getContains <em>Contains</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Contains</em>'.
+	 * @see Manufacture.Step#getContains()
+	 * @see #getStep()
+	 * @generated
+	 */
+	EReference getStep_Contains();
+
+	/**
+	 * Returns the meta object for the reference '{@link Manufacture.Step#getUses <em>Uses</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Uses</em>'.
+	 * @see Manufacture.Step#getUses()
+	 * @see #getStep()
+	 * @generated
+	 */
+	EReference getStep_Uses();
+
+	/**
+	 * Returns the meta object for the reference '{@link Manufacture.Step#getProcedures <em>Procedures</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Procedures</em>'.
+	 * @see Manufacture.Step#getProcedures()
+	 * @see #getStep()
+	 * @generated
+	 */
+	EReference getStep_Procedures();
+
+	/**
+	 * Returns the meta object for class '{@link Manufacture.NamedElement <em>Named Element</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Named Element</em>'.
+	 * @see Manufacture.NamedElement
+	 * @generated
+	 */
+	EClass getNamedElement();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Manufacture.NamedElement#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see Manufacture.NamedElement#getName()
+	 * @see #getNamedElement()
+	 * @generated
+	 */
+	EAttribute getNamedElement_Name();
+
+	/**
+	 * Returns the meta object for class '{@link Manufacture.SpeedController <em>Speed Controller</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Speed Controller</em>'.
+	 * @see Manufacture.SpeedController
+	 * @generated
+	 */
+	EClass getSpeedController();
+
+	/**
+	 * Returns the meta object for class '{@link Manufacture.AssignController <em>Assign Controller</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Assign Controller</em>'.
+	 * @see Manufacture.AssignController
+	 * @generated
+	 */
+	EClass getAssignController();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link Manufacture.AssignController#getPerson <em>Person</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Person</em>'.
+	 * @see Manufacture.AssignController#getPerson()
+	 * @see #getAssignController()
+	 * @generated
+	 */
+	EReference getAssignController_Person();
+
+	/**
+	 * Returns the meta object for class '{@link Manufacture.Person <em>Person</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Person</em>'.
+	 * @see Manufacture.Person
+	 * @generated
+	 */
+	EClass getPerson();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Manufacture.Person#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see Manufacture.Person#getName()
+	 * @see #getPerson()
+	 * @generated
+	 */
+	EAttribute getPerson_Name();
+
+	/**
+	 * Returns the meta object for class '{@link Manufacture.Person1 <em>Person1</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Person1</em>'.
+	 * @see Manufacture.Person1
+	 * @generated
+	 */
+	EClass getPerson1();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Manufacture.Person1#getName1 <em>Name1</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name1</em>'.
+	 * @see Manufacture.Person1#getName1()
+	 * @see #getPerson1()
+	 * @generated
+	 */
+	EAttribute getPerson1_Name1();
+
+	/**
+	 * Returns the meta object for class '{@link Manufacture.Person2 <em>Person2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Person2</em>'.
+	 * @see Manufacture.Person2
+	 * @generated
+	 */
+	EClass getPerson2();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Manufacture.Person2#getName2 <em>Name2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name2</em>'.
+	 * @see Manufacture.Person2#getName2()
+	 * @see #getPerson2()
+	 * @generated
+	 */
+	EAttribute getPerson2_Name2();
+
+	/**
+	 * Returns the meta object for class '{@link Manufacture.WorkPiece <em>Work Piece</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Work Piece</em>'.
+	 * @see Manufacture.WorkPiece
+	 * @generated
+	 */
+	EClass getWorkPiece();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Manufacture.WorkPiece#getType <em>Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Type</em>'.
+	 * @see Manufacture.WorkPiece#getType()
+	 * @see #getWorkPiece()
+	 * @generated
+	 */
+	EAttribute getWorkPiece_Type();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Manufacture.WorkPiece#getKilogram <em>Kilogram</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Kilogram</em>'.
+	 * @see Manufacture.WorkPiece#getKilogram()
+	 * @see #getWorkPiece()
+	 * @generated
+	 */
+	EAttribute getWorkPiece_Kilogram();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Manufacture.WorkPiece#getCubic <em>Cubic</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Cubic</em>'.
+	 * @see Manufacture.WorkPiece#getCubic()
+	 * @see #getWorkPiece()
+	 * @generated
+	 */
+	EAttribute getWorkPiece_Cubic();
+
+	/**
+	 * Returns the meta object for class '{@link Manufacture.Storage <em>Storage</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Storage</em>'.
+	 * @see Manufacture.Storage
+	 * @generated
+	 */
+	EClass getStorage();
+
+	/**
+	 * Returns the meta object for the reference '{@link Manufacture.Storage#getWorkPieceStores <em>Work Piece Stores</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Work Piece Stores</em>'.
+	 * @see Manufacture.Storage#getWorkPieceStores()
+	 * @see #getStorage()
+	 * @generated
+	 */
+	EReference getStorage_WorkPieceStores();
+
+	/**
+	 * Returns the meta object for the reference '{@link Manufacture.Storage#getIntermediateStorages <em>Intermediate Storages</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Intermediate Storages</em>'.
+	 * @see Manufacture.Storage#getIntermediateStorages()
+	 * @see #getStorage()
+	 * @generated
+	 */
+	EReference getStorage_IntermediateStorages();
+
+	/**
+	 * Returns the meta object for class '{@link Manufacture.IntermediateProduct <em>Intermediate Product</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Intermediate Product</em>'.
+	 * @see Manufacture.IntermediateProduct
+	 * @generated
+	 */
+	EClass getIntermediateProduct();
+
+	/**
+	 * Returns the meta object for class '{@link Manufacture.Usable <em>Usable</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Usable</em>'.
+	 * @see Manufacture.Usable
+	 * @generated
+	 */
+	EClass getUsable();
+
+	/**
+	 * Returns the meta object for class '{@link Manufacture.Controller <em>Controller</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Controller</em>'.
+	 * @see Manufacture.Controller
+	 * @generated
+	 */
+	EClass getController();
+
+	/**
+	 * Returns the meta object for the reference '{@link Manufacture.Controller#getControls <em>Controls</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Controls</em>'.
+	 * @see Manufacture.Controller#getControls()
+	 * @see #getController()
+	 * @generated
+	 */
+	EReference getController_Controls();
+
+	/**
+	 * Returns the meta object for enum '{@link Manufacture.StepTypes <em>Step Types</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Step Types</em>'.
+	 * @see Manufacture.StepTypes
+	 * @generated
+	 */
+	EEnum getStepTypes();
+
+	/**
+	 * Returns the meta object for enum '{@link Manufacture.WorkPieceTypes <em>Work Piece Types</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Work Piece Types</em>'.
+	 * @see Manufacture.WorkPieceTypes
+	 * @generated
+	 */
+	EEnum getWorkPieceTypes();
+
+	/**
+	 * Returns the factory that creates the instances of the model.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the factory that creates the instances of the model.
+	 * @generated
+	 */
+	ManufactureFactory getManufactureFactory();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * Defines literals for the meta objects that represent
+	 * <ul>
+	 *   <li>each class,</li>
+	 *   <li>each feature of each class,</li>
+	 *   <li>each operation of each class,</li>
+	 *   <li>each enum,</li>
+	 *   <li>and each data type</li>
+	 * </ul>
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	interface Literals {
+		/**
+		 * The meta object literal for the '{@link Manufacture.impl.ManuSystemImpl <em>Manu System</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see Manufacture.impl.ManuSystemImpl
+		 * @see Manufacture.impl.ManufacturePackageImpl#getManuSystem()
+		 * @generated
+		 */
+		EClass MANU_SYSTEM = eINSTANCE.getManuSystem();
+
+		/**
+		 * The meta object literal for the '<em><b>First Step</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MANU_SYSTEM__FIRST_STEP = eINSTANCE.getManuSystem_FirstStep();
+
+		/**
+		 * The meta object literal for the '<em><b>Intermediateproducts</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MANU_SYSTEM__INTERMEDIATEPRODUCTS = eINSTANCE.getManuSystem_Intermediateproducts();
+
+		/**
+		 * The meta object literal for the '<em><b>Workpiece</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MANU_SYSTEM__WORKPIECE = eINSTANCE.getManuSystem_Workpiece();
+
+		/**
+		 * The meta object literal for the '{@link Manufacture.impl.StepImpl <em>Step</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see Manufacture.impl.StepImpl
+		 * @see Manufacture.impl.ManufacturePackageImpl#getStep()
+		 * @generated
+		 */
+		EClass STEP = eINSTANCE.getStep();
+
+		/**
+		 * The meta object literal for the '<em><b>Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute STEP__TYPE = eINSTANCE.getStep_Type();
+
+		/**
+		 * The meta object literal for the '<em><b>Controls Speed</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STEP__CONTROLS_SPEED = eINSTANCE.getStep_ControlsSpeed();
+
+		/**
+		 * The meta object literal for the '<em><b>Assigns Person</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STEP__ASSIGNS_PERSON = eINSTANCE.getStep_AssignsPerson();
+
+		/**
+		 * The meta object literal for the '<em><b>Contains</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STEP__CONTAINS = eINSTANCE.getStep_Contains();
+
+		/**
+		 * The meta object literal for the '<em><b>Uses</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STEP__USES = eINSTANCE.getStep_Uses();
+
+		/**
+		 * The meta object literal for the '<em><b>Procedures</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STEP__PROCEDURES = eINSTANCE.getStep_Procedures();
+
+		/**
+		 * The meta object literal for the '{@link Manufacture.impl.NamedElementImpl <em>Named Element</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see Manufacture.impl.NamedElementImpl
+		 * @see Manufacture.impl.ManufacturePackageImpl#getNamedElement()
+		 * @generated
+		 */
+		EClass NAMED_ELEMENT = eINSTANCE.getNamedElement();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute NAMED_ELEMENT__NAME = eINSTANCE.getNamedElement_Name();
+
+		/**
+		 * The meta object literal for the '{@link Manufacture.impl.SpeedControllerImpl <em>Speed Controller</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see Manufacture.impl.SpeedControllerImpl
+		 * @see Manufacture.impl.ManufacturePackageImpl#getSpeedController()
+		 * @generated
+		 */
+		EClass SPEED_CONTROLLER = eINSTANCE.getSpeedController();
+
+		/**
+		 * The meta object literal for the '{@link Manufacture.impl.AssignControllerImpl <em>Assign Controller</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see Manufacture.impl.AssignControllerImpl
+		 * @see Manufacture.impl.ManufacturePackageImpl#getAssignController()
+		 * @generated
+		 */
+		EClass ASSIGN_CONTROLLER = eINSTANCE.getAssignController();
+
+		/**
+		 * The meta object literal for the '<em><b>Person</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ASSIGN_CONTROLLER__PERSON = eINSTANCE.getAssignController_Person();
+
+		/**
+		 * The meta object literal for the '{@link Manufacture.impl.PersonImpl <em>Person</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see Manufacture.impl.PersonImpl
+		 * @see Manufacture.impl.ManufacturePackageImpl#getPerson()
+		 * @generated
+		 */
+		EClass PERSON = eINSTANCE.getPerson();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PERSON__NAME = eINSTANCE.getPerson_Name();
+
+		/**
+		 * The meta object literal for the '{@link Manufacture.impl.Person1Impl <em>Person1</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see Manufacture.impl.Person1Impl
+		 * @see Manufacture.impl.ManufacturePackageImpl#getPerson1()
+		 * @generated
+		 */
+		EClass PERSON1 = eINSTANCE.getPerson1();
+
+		/**
+		 * The meta object literal for the '<em><b>Name1</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PERSON1__NAME1 = eINSTANCE.getPerson1_Name1();
+
+		/**
+		 * The meta object literal for the '{@link Manufacture.impl.Person2Impl <em>Person2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see Manufacture.impl.Person2Impl
+		 * @see Manufacture.impl.ManufacturePackageImpl#getPerson2()
+		 * @generated
+		 */
+		EClass PERSON2 = eINSTANCE.getPerson2();
+
+		/**
+		 * The meta object literal for the '<em><b>Name2</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PERSON2__NAME2 = eINSTANCE.getPerson2_Name2();
+
+		/**
+		 * The meta object literal for the '{@link Manufacture.impl.WorkPieceImpl <em>Work Piece</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see Manufacture.impl.WorkPieceImpl
+		 * @see Manufacture.impl.ManufacturePackageImpl#getWorkPiece()
+		 * @generated
+		 */
+		EClass WORK_PIECE = eINSTANCE.getWorkPiece();
+
+		/**
+		 * The meta object literal for the '<em><b>Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute WORK_PIECE__TYPE = eINSTANCE.getWorkPiece_Type();
+
+		/**
+		 * The meta object literal for the '<em><b>Kilogram</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute WORK_PIECE__KILOGRAM = eINSTANCE.getWorkPiece_Kilogram();
+
+		/**
+		 * The meta object literal for the '<em><b>Cubic</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute WORK_PIECE__CUBIC = eINSTANCE.getWorkPiece_Cubic();
+
+		/**
+		 * The meta object literal for the '{@link Manufacture.impl.StorageImpl <em>Storage</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see Manufacture.impl.StorageImpl
+		 * @see Manufacture.impl.ManufacturePackageImpl#getStorage()
+		 * @generated
+		 */
+		EClass STORAGE = eINSTANCE.getStorage();
+
+		/**
+		 * The meta object literal for the '<em><b>Work Piece Stores</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STORAGE__WORK_PIECE_STORES = eINSTANCE.getStorage_WorkPieceStores();
+
+		/**
+		 * The meta object literal for the '<em><b>Intermediate Storages</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STORAGE__INTERMEDIATE_STORAGES = eINSTANCE.getStorage_IntermediateStorages();
+
+		/**
+		 * The meta object literal for the '{@link Manufacture.impl.IntermediateProductImpl <em>Intermediate Product</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see Manufacture.impl.IntermediateProductImpl
+		 * @see Manufacture.impl.ManufacturePackageImpl#getIntermediateProduct()
+		 * @generated
+		 */
+		EClass INTERMEDIATE_PRODUCT = eINSTANCE.getIntermediateProduct();
+
+		/**
+		 * The meta object literal for the '{@link Manufacture.impl.UsableImpl <em>Usable</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see Manufacture.impl.UsableImpl
+		 * @see Manufacture.impl.ManufacturePackageImpl#getUsable()
+		 * @generated
+		 */
+		EClass USABLE = eINSTANCE.getUsable();
+
+		/**
+		 * The meta object literal for the '{@link Manufacture.impl.ControllerImpl <em>Controller</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see Manufacture.impl.ControllerImpl
+		 * @see Manufacture.impl.ManufacturePackageImpl#getController()
+		 * @generated
+		 */
+		EClass CONTROLLER = eINSTANCE.getController();
+
+		/**
+		 * The meta object literal for the '<em><b>Controls</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CONTROLLER__CONTROLS = eINSTANCE.getController_Controls();
+
+		/**
+		 * The meta object literal for the '{@link Manufacture.StepTypes <em>Step Types</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see Manufacture.StepTypes
+		 * @see Manufacture.impl.ManufacturePackageImpl#getStepTypes()
+		 * @generated
+		 */
+		EEnum STEP_TYPES = eINSTANCE.getStepTypes();
+
+		/**
+		 * The meta object literal for the '{@link Manufacture.WorkPieceTypes <em>Work Piece Types</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see Manufacture.WorkPieceTypes
+		 * @see Manufacture.impl.ManufacturePackageImpl#getWorkPieceTypes()
+		 * @generated
+		 */
+		EEnum WORK_PIECE_TYPES = eINSTANCE.getWorkPieceTypes();
+
+	}
+
+} //ManufacturePackage
